@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tela de Login</title>
+  <link rel="shortcut icon" href="fonts/Cheetah Kick - Personal Use.otf" type="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @font-face {
+      font-family: 'Food';
+      src: url(fonts/Cheetah\ Kick\ -\ Personal\ Use.otf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    h1 {
+      font-family: 'Food';
+      font-size: 3em;
+      font-weight: normal;
+      font-size: 80px;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .login-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+    function redirecionarParaHome() {
+      window.location.href = "home.html";
+    }
+    function redirecionarParaCadastro() {
+      window.location.href = "cadastro.html";
+    }
+    function redirecionarParaReset() {
+      window.location.href = "resetPassword.html";
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1 align="center">New Age</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="login-form">
+      <h2>Acesse sua conta</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+          <label for="password">Senha:</label>
+          <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+        </div>
+        <div align="center">
+          <button type="button" class="btn btn-primary" onclick="redirecionarParaHome()">Entrar</button>
+          <button type="button" class="btn btn-link" onclick="redirecionarParaCadastro()">Cadastre-se</button>
+        </div>
+        <br>
+        <div align="right">
+          <button type="button" class="btn btn-link" onclick="redirecionarParaReset()">Esqueceu a senha?</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

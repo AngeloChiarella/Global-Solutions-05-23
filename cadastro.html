@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function redirecionarParaHome() {
+          window.location.href = "home.html";
+        }
+        function redirecionarParaLogin() {
+          window.location.href = "index.html";
+        }
+      </script>
+<head>
+  <title>Consciência Alimentar</title>
+  <link rel="shortcut icon" href="fonts/Cheetah Kick - Personal Use.otf" type="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @font-face {
+            font-family: 'Food';
+            src: url(fonts/Cheetah\ Kick\ -\ Personal\ Use.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .recipe {
+      margin-bottom: 20px;
+    }
+    
+    .recipe-card {
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+
+    .recipe-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+        font-family: 'Food';
+        font-size: 3em;
+        font-weight: normal;
+        font-size: 80px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><h1 align="center">New Age</h1></div>
+  </header>
+
+  <div class="container">
+    <h2>Cadastre-se</h2>
+    <div class="col-lg-12">
+        <form>
+            <div class="row">
+                <div class="col-lg-6 form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="col-lg-4 form-group">
+                    <label for="tel">Telefone:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="Digite seu telefone">
+                </div>
+                <div class="col-lg-8 form-group">
+                    <label for="tel">Endereço:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="Digite seu endereço">
+                </div>
+                <div class="col-lg-4 form-group form-group">
+                  <label for="password">Senha:</label>
+                  <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                </div>
+                <div class="col-lg-4 form-group form-group">
+                  <label for="password">Senha:</label>
+                  <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <button type="button" class="btn btn-link" onclick="redirecionarParaLogin()">Voltar</button>
+            <button type="button" class="btn btn-primary" onclick="redirecionarParaHome()">Confirmar</button>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/"></script>
+</body>

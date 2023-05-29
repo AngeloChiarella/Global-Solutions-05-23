@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consciência Alimentar</title>
+  <link rel="shortcut icon" href="fonts/Cheetah Kick - Personal Use.otf" type="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @font-face {
+      font-family: 'Food';
+      src: url(fonts/Cheetah\ Kick\ -\ Personal\ Use.otf) format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .recipe {
+      margin-bottom: 20px;
+    }
+
+    .recipe-card {
+      height: 90%;
+      text-align: center;
+      padding: 20px;
+      background-color: #61da7d;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+
+    .recipe-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .notes-section {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .notes-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .notes-textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+
+    .notes-button {
+      width: 100%;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-family: 'Food';
+      font-size: 3em;
+      font-weight: normal;
+      font-size: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1 align="center">New Age</h1>
+    </div>
+  </header>
+  <div>
+    <h4 align="right">Bem-vindo, Angelo
+      <p></p>
+      <button type="button" class="btn btn-link" onclick="redirecionarParaHome()">Voltar</button>
+    </h4>
+  </div>
+
+  <div align="center" class="container">
+
+    <div class="row">
+      <div class="col-lg-12 col-md-6">
+        <h2>Pense Nisso</h2>
+        <div class="recipe-card">
+          <img src="imagens/solidariedade.jpg" alt="consciencia" class="recipe-image">
+          <h3>Seja Consciente</h3>
+          <p align="left">
+          <ul type="" align="left">
+            <li>Faça a diferença na vida de outras pessoas. A forma como nos
+              alimentamos tem um impacto profundo não apenas em nossa saúde, mas também na sociedade ao nosso redor. Ao
+              adotar escolhas alimentares conscientes, podemos contribuir para um mundo mais justo e solidário.</li>
+            <li>A consciência alimentar envolve uma série de aspectos, desde a escolha de alimentos saudáveis e
+              sustentáveis até a redução do desperdício. Ao optar por alimentos frescos, naturais e nutritivos, não
+              apenas estamos cuidando de nossa própria saúde, mas também apoiando agricultores locais e promovendo
+              práticas agrícolas sustentáveis.</li>
+            <li>Além disso, ajudar o próximo por meio da alimentação é uma maneira poderosa de demonstrar empatia e
+              solidariedade. Existem diversas formas de contribuir: doar alimentos a instituições de caridade,
+              participar de projetos de alimentação comunitária ou até mesmo compartilhar uma refeição com alguém que
+              precisa. Pequenos gestos podem ter um impacto significativo na vida daqueles que enfrentam dificuldades.
+            </li>
+            <li>Lembre-se de que cada escolha alimentar que fazemos é uma oportunidade de fazer o bem. Ao estarmos
+              conscientes do impacto de nossas ações, podemos promover mudanças positivas em nossa própria vida e na
+              vida de outros. Cultivar essa consciência alimentar é um convite para uma jornada de transformação pessoal
+              e social. Vamos nutrir nosso corpo, nossa comunidade e nosso planeta com bondade e compaixão através da
+              comida.</li>
+          </ul>
+          <br>
+          <ul type="circle" align="center">
+            <h5>Dê um presente de esperança! Faça a diferença na vida de crianças necessitadas. Sua doação pode trazer
+              alegria, educação e oportunidades. Juntos, podemos construir um futuro melhor para cada criança. Abra seu
+              coração e estenda sua mão solidária. Doe hoje e deixe um sorriso brilhar no rosto de uma criança.
+            </h5>
+            <br>
+            <p>
+              <a href="https://www.casaronaldabc.org.br" target="_blank">
+                <span class="elementor-icon-list-icon">
+                  <i aria-hidden="true" class="fas fa-hands-helping"></i> </span>
+                <span class="elementor-icon-list-text">Assistência Social<br><b>Casa Ronald McDonald ABC</b></span>
+              </a>
+            </p>
+            <p>
+              <a href="http://www.apadrinhamento.org.br" target="_blank">
+                <span class="elementor-icon-list-icon">
+                  <i aria-hidden="true" class="fas fa-child"></i> </span>
+                <span class="elementor-icon-list-text">Criança e Adolescente<b><br>ChildFund Brasil – Fundo para
+                    Crianças</b></span>
+              </a>
+            </p>
+            <p>
+              <a href="http://help.unicef.org/" target="_blank">
+                <span class="elementor-icon-list-icon">
+                  <i aria-hidden="true" class="fas fa-child"></i> </span>
+                <span class="elementor-icon-list-text">Unicef<b><br>Para cada criança
+                    Crianças</b></span>
+              </a>
+            </p>
+            <h6 align="left">Provérbios: 19:17 <br>
+              "Aquele que se compadece do pobre empresta ao Senhor, que lhe retribuirá o seu benefício."
+              <br> Deus te abençoe sempre!</h6>
+              <br>
+          </ul>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+      function redirecionarParaHome() {
+        window.location.href = "home.html";
+      }
+    </script>
+</body>
+
+</html>

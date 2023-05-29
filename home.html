@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consciência Alimentar</title>
+  <link rel="shortcut icon" href="fonts/Cheetah Kick - Personal Use.otf" type="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @font-face {
+      font-family: 'Food';
+      src: url(fonts/Cheetah\ Kick\ -\ Personal\ Use.otf) format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .recipe {
+      margin-bottom: 20px;
+    }
+
+    .recipe-card {
+      height: 90%;
+      text-align: center;
+      padding: 20px;
+      background-color: #61da7d;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+
+    .recipe-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .notes-section {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .notes-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .notes-textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+
+    .notes-button {
+      width: 100%;
+    }
+
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+    }
+
+    h1 {
+      font-family: 'Food';
+      font-size: 3em;
+      font-weight: normal;
+      font-size: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1 align="center">New Age</h1>
+    </div>
+  </header>
+  <div>
+    <h4 align="right">Bem-vindo, Angelo
+      <p></p>
+      <button type="button" class="btn btn-link" onclick="redirecionarParaLogin()">Sair</button>
+    </h4>
+  </div>
+
+  <div align="center" class="container">
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <h2>Pense Nisso</h2>
+        <div class="recipe-card">
+          <img src="imagens/solidariedade.jpg" alt="Salada de Quinoa" class="recipe-image">
+          <h5>Alimente sua consciência e ajude o próximo através da comida! Faça escolhas alimentares conscientes,
+            optando por alimentos saudáveis e sustentáveis. Ao reduzir o desperdício e compartilhar refeições com quem
+            precisa, você estará promovendo uma sociedade mais justa e solidária. Nutra seu corpo e sua comunidade com
+            uma atitude alimentar cheia de compaixão. Junte-se a nós nessa jornada transformadora!</h5>
+            <br>
+            <br>
+            <button type="button" class="btn btn-success" onclick="redirecionarParaConsciencia()">Ver</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h2>Segurança Alimentar</h2>
+        <div class="recipe-card">
+          <img src="imagens/seguranca.png" alt="Smoothie de Frutas" class="recipe-image">
+          <h5>Garanta um futuro saboroso e sustentável, descubra a importância da segurança alimentar e mergulhe no
+            mundo
+            da agricultura sustentável. Cultivar alimentos de forma responsável, protegendo o meio ambiente e garantindo
+            a disponibilidade de alimentos nutritivos é essencial para o bem-estar de todos. Conheça práticas agrícolas
+            inovadoras que preservam os recursos naturais, promovem a biodiversidade e fortalecem as comunidades rurais.
+            Abrace essa jornada rumo a um planeta mais saudável</h5>
+          <button type="button" class="btn btn-success" onclick="redirecionarParaSeguranca()">Ver</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h2>Receitas</h2>
+        <div class="recipe-card">
+          <img src="imagens/receitas.jpg" alt="Sopa de Legumes" class="recipe-image">
+          <h5>Sabor e saúde se encontram aqui!
+            Experimente nossas receitas saudáveis e deliciosas!
+            Encante seu paladar sem abrir mão do bem-estar.
+            Descubra pratos nutritivos que vão te surpreender!
+            Receitas saudáveis para uma vida mais equilibrada.
+            Desperte o chef saudável que existe em você!</h5>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          <button type="button" class="btn btn-success" onclick="redirecionarParaReceitas()">Ver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function redirecionarParaLogin() {
+      window.location.href = "index.html";
+    }
+    function redirecionarParaReceitas() {
+      window.location.href = "receitas.html";
+    }
+    function redirecionarParaSeguranca() {
+      window.location.href = "seguranca.html";
+    }
+    function redirecionarParaConsciencia() {
+      window.location.href = "consciencia.html";
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Consciência Alimentar</title>
+  <link rel="shortcut icon" href="fonts/Cheetah Kick - Personal Use.otf" type="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    @font-face {
+                font-family: 'Food';
+                src: url(fonts/Cheetah\ Kick\ -\ Personal\ Use.otf) format('opentype');
+                font-weight: normal;
+                font-style: normal;
+            }
+    body {
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 20px;
+      color: #fff;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .recipe {
+      margin-bottom: 20px;
+    }
+    
+    .recipe-card {
+      height: 90%;
+      text-align: center;
+      padding: 20px;
+      background-color: #61da7d;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+    }
+
+    .recipe-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .notes-section {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    
+    .notes-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .notes-textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      margin-bottom: 10px;
+    }
+    
+    .notes-button {
+      width: 100%;
+    }
+    
+    .comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+    }
+    
+    h1 {
+      font-family: 'Food';
+      font-size: 3em;
+      font-weight: normal;
+      font-size: 80px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><h1 align="center">New Age</h1></div>
+  </header>
+  <div>
+    <h4 align = "right">Bem-vindo, Angelo
+      <p></p>
+    <button type="button" class="btn btn-link" onclick="redirecionarParaHome()">Voltar</button></h4>
+  </div>
+
+  <div align="center" class="container">
+
+    <h2>Receitas</h2>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="recipe-card">
+          <img src="imagens/quinoa.jpg" alt="Salada de Quinoa" class="recipe-image">
+          <h3>Salada de Quinoa</h3>
+          <h5>Ingredientes:</h4>
+          <p align="left">           
+            <ul  type="circle" align="left">
+              <li>250 g de quinoa em grãos </li>
+              <li>1/2 (chá) de páprica</li>
+              <li>2 colheres (sopa) de azeite</li>
+              <li>1/2 (sopa) de gengibre ralado</li>
+              <li>1 cenoura ralada</li>
+              <li>1 colher (sopa) de MAGGI® Fondor</li>
+              <li>1 tomate sem pele e sem sementes</li>
+              <li>1 colher (sopa) de cebolinha-verde</li>
+            </ul>   
+            </p>
+            <iframe width="310" height="215" src="https://www.youtube.com/embed/MoiQhQ3fiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="col-lg-12 notes-section">
+              <div id="commentsSection"></div>
+              <textarea id="commentInput" class="form-control notes-textarea" placeholder="Digite suas anotações, debates ou perguntas"></textarea>
+              <button id="submitButton" type="button" class="col-lg-4 btn btn-primary notes-button">Enviar</button>
+            </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="recipe-card">
+          <img src="imagens/brownie.jpg" alt="Smoothie de Frutas" class="recipe-image">
+          <h3>Brownie fit</h3>
+          <h5>Ingredientes:</h4>
+          <p align="left">
+            <ul  type="circle" align="left">
+              <li>120g de aveia em flocos</li>
+              <li>200 ml de leite de coco </li> 
+              <li>2 bananas</li>
+              <li>2 ovos</li>
+              <li>Canela a gosto</li>
+              <li> 30g de cacau em pó sem açúcar</li>
+              <li> 1 colher de sopa de fermento para bolo</li>
+            </ul>
+          </p>
+          <iframe width="310" height="215" src="https://www.youtube.com/embed/89nqCT5BY5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="col-lg-12 notes-section">
+            <div id="commentsSection2"></div>
+            <textarea id="commentInput2" class="form-control notes-textarea" placeholder="Digite suas anotações, debates ou perguntas"></textarea>
+            <button id="submitButton2" type="button" class="col-lg-4 btn btn-primary notes-button">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="recipe-card">
+          <img src="imagens/mamao.jpg" alt="Sopa de Legumes" class="recipe-image">
+          <h3>Smoothie de Mamão</h3>
+          <h5>Ingredientes:</h4>
+          <p>
+            <ul type="circle" align="left">
+                <li>100g mamão congelado</li>
+                <li>100g frutas vermelhas</li>
+                <li>150ml bebida vegetal</li>
+                <li>1 scoop de Collagen Gut</li>
+            </ul> 
+
+            PREPARO:
+            Em um liquidificador, coloque todos os ingredientes. Misture bem até ficar de forma homogênea e bem cremoso.
+          </p>
+          <iframe width="310" height="215" src="https://www.youtube.com/embed/KyHFeZmcusI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="col-lg-12 notes-section">
+              <div id="commentsSection3"></div>
+              <textarea id="commentInput3" class="form-control notes-textarea" placeholder="Digite suas anotações, debates ou perguntas"></textarea>
+              <button id="submitButton3" type="button" class="col-lg-4 btn btn-primary notes-button">Enviar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.getElementById("submitButton").addEventListener("click", function() {
+      var commentInput = document.getElementById("commentInput");
+      var commentText = commentInput.value.trim();
+      
+      if (commentText !== "") {
+        var commentDiv = document.createElement("div");
+        commentDiv.className = "comment";
+        commentDiv.textContent = "Angelo: " + commentText;
+        
+        var commentsSection = document.getElementById("commentsSection");
+        commentsSection.appendChild(commentDiv);
+        
+        commentInput.value = "";
+      }
+    });
+
+    function redirecionarParaHome() {
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+
+</html>
